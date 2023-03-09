@@ -22,10 +22,10 @@ Follow the prompts until the repo is created, see `cookiecutter.json` for the fu
 Create the repository under the [Arabesque organisation](https://github.com/arabesque-sray), and then initialise your new repo:
 
 ```bash
-cd <your-service>
+cd <repo-name>
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin git@github.com:arabesque-sray/<your-service>
+git remote add origin git@github.com:arabesque-sray/<repo-name>
 git push -u origin master
 ```

@@ -26,7 +26,7 @@ python setup.py install
 
 Install the git hooks:
 ```bash
-TODO
+# TODO
 ```
 
 ## Linting and Testing
@@ -34,7 +34,7 @@ TODO
 To lint the project:
 
 ```bash
-TODO
+# TODO
 ```
 
 To test the project:
@@ -45,7 +45,9 @@ python -m pytest -svv tests
 
 ## Deployment
 
-`tbd`
+```bash
+# TODO
+```
 
 ## License
 
