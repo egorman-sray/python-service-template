@@ -7,8 +7,8 @@
 Clone the repository:
 
 ```bash
-git clone https://github.com/arabesque-sray/{{cookiecutter.service_name}}
-cd {{cookiecutter.service_name}}
+git clone https://github.com/arabesque-sray/{{cookiecutter.repo_name}}
+cd {{cookiecutter.repo_name}}
 ```
 
 Create and activate a virtual environment:

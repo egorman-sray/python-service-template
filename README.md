@@ -26,6 +26,6 @@ cd <repo-name>
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin git@github.com:arabesque-sray/<repo-name>
+git remote add origin https://github.com/arabesque-sray/<repo-name>
 git push -u origin master
 ```
