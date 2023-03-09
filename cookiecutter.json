@@ -1,5 +1,5 @@
 {
-    "repo_name": "example-sevice",
+    "repo_name": "repo-name",
     "service_name": "{{cookiecutter.repo_name}}",
     "description": "TBD",
     "version": "0.1",
