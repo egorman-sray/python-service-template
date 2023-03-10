@@ -1,1 +1,6 @@
 pytest
+pre-commit
+pre-commit-hooks
+black
+flake8
+isort

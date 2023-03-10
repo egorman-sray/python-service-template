@@ -2,52 +2,11 @@
 
 {{cookiecutter.description}}
 
-## Installation
+![python](https://img.shields.io/badge/python-3.11.0-blue.svg)
 
-Clone the repository:
+## Developement
 
-```bash
-git clone https://github.com/arabesque-sray/{{cookiecutter.repo_name}}
-cd {{cookiecutter.repo_name}}
-```
-
-Create and activate a virtual environment:
-
-```bash
-python -m venv .env
-source .env/bin/activate
-```
-
-Install the requirements:
-```bash
-python -m pip install -r requirements.txt
-python setup.py install
-```
-
-Install the git hooks:
-```bash
-# TODO
-```
-
-## Linting and Testing
-
-To lint the project:
-
-```bash
-# TODO
-```
-
-To test the project:
-
-```bash
-python -m pytest -svv tests
-```
-
-## Deployment
-
-```bash
-# TODO
-```
+See the [Developer README](./DEVELOPER.md) for instructions on usage, installation, linting, testing and deployment.
 
 ## License
 

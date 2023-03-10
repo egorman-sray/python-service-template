@@ -1,6 +1,6 @@
 # Python Service Template
 
-This is a cookiecutter template for bootstrapping a Python service.
+This is a cookiecutter template for bootstrapping a Python service within the [Arabeqsue organisation](https://github.com/arabesque-sray).
 
 ## Usage
 
