@@ -1,6 +1,6 @@
 {
-    "repo_name": "domain-service-name",
-    "service_name": "{{cookiecutter.repo_name}}",
+    "repo_name": "repository-name",
+    "service_name": "service_name",
     "description": "TBD",
     "version": "0.1",
     "license": "Arabesque S-Ray GmbH",
