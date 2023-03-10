@@ -27,7 +27,7 @@ Please install the following:
 Clone the repository:
 
 ```bash
-git clone https://github.com/arabesque-sray/{{cookiecutter.repo_name}}
+git clone https://github.com/{{cookiecutter.organisation}}/{{cookiecutter.repo_name}}
 cd {{cookiecutter.repo_name}}
 ```
 
@@ -72,6 +72,8 @@ To test the project:
 
 ```bash
 python -m pytest -v tests
+coverage run -m pytest -v tests
+coverage report --omit="tests/*"
 ```
 
 ## Builds
@@ -87,4 +89,4 @@ gcloud beta builds triggers run {{cookiecutter.repo_name}} --branch=<BRANCH-NAME
 
 ## Workflows
 
-Our workflows are managed by the [data-technology-infrastructure repository](https://github.com/arabesque-sray/data-technology-infrastructure), see their explaination for how workflows are executed.
+Our workflows are managed by the [data-technology-infrastructure repository](https://github.com/arabesque-sray/data-technology-infrastructure), see their explanation for how workflows are executed.

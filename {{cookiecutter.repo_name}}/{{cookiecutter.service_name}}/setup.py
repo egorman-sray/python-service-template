@@ -17,6 +17,7 @@ setup(
             "flake8",
             "isort",
             "pytest",
+            "coverage",
         ]
     },
 )
