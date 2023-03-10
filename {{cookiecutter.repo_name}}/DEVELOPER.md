@@ -45,7 +45,7 @@ Install the requirements:
 
 ```bash
 python -m pip install -r requirements.txt
-python setup.py install
+python -m pip install {{cookiecutter.service_name}}/.[test]
 ```
 
 ### Hooks

@@ -3,6 +3,5 @@ FROM python:{{cookiecutter.python_version}}-buster
 COPY . /app
 WORKDIR /app
 
-RUN pip install -r requirements.txt  --no-cache-dir
-
-RUN python setup.py install
+RUN python -m pip install -r requirements.txt  --no-cache-dir
+RUN python -m pip install {{cookiecutter.service_name}}/.
