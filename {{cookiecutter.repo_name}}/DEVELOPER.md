@@ -67,7 +67,9 @@ To run the project:
 To lint the project:
 
 ```bash
-# TODO
+python -m black
+python -m flake8
+python -m isort
 ```
 
 ## Testing
