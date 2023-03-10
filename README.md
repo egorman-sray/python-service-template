@@ -29,3 +29,7 @@ git commit -m "Initial commit"
 git remote add origin https://github.com/arabesque-sray/<repo-name>
 git push -u origin master
 ```
+
+## Cloud Builds
+
+When ready to produce cloud builds on GCP, edit the `cloudbuild` files and remove the `.example` suffix.

@@ -7,16 +7,17 @@
     * [Repository](#repository)
     * [Environment](#environment)
     * [Hooks](#hooks)
-* [Usage](#usage)
 * [Linting](#linting)
 * [Testing](#testing)
-* [Deployment](#deployment)
+* [Builds](#builds)
 
 ---
 
 ## Installation
 
 ### Pre-requisites
+
+Please install the following:
 
 1. [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. [Python {{cookiecutter.python_version}}](https://www.python.org/downloads/)
@@ -55,14 +56,6 @@ Install the hooks:
 pre-commit install
 ```
 
-## Usage
-
-To run the project:
-
-```bash
-# TODO
-```
-
 ## Linting
 
 To lint the project:
@@ -81,8 +74,17 @@ To test the project:
 python -m pytest -v tests
 ```
 
-## Deployment
+## Builds
+
+To create a build for this repository you must [connect cloud build to your repository](https://cloud.google.com/build/docs/automate-builds#connect_to_your_repository) and then [create a trigger](https://cloud.google.com/build/docs/automate-builds#create_a_trigger) to let GCP know when to trigger a new build. You can [view the build](https://cloud.google.com/build/docs/automate-builds#view_build_details) as it's being created and monitor its progress.
+
+To run a trigger manually:
 
 ```bash
-# TODO
+# Note: This requires installing the gcloud beta component "builds"
+gcloud beta builds triggers run {{cookiecutter.repo_name}} --branch=<BRANCH-NAME>
 ```
+
+## Workflows
+
+Our workflows are managed by the [data-technology-infrastructure repository](https://github.com/arabesque-sray/data-technology-infrastructure), see their explaination for how workflows are executed.
