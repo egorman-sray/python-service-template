@@ -19,7 +19,7 @@
 ### Pre-requisites
 
 1. [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-2. [Python 3.11](https://www.python.org/downloads/)
+2. [Python {{cookiecutter.python_version}}](https://www.python.org/downloads/)
 
 ### Repository
 
@@ -35,6 +35,7 @@ cd {{cookiecutter.repo_name}}
 Create and activate a virtual environment:
 
 ```bash
+# Make sure you are using Python {{cookiecutter.python_version}}!
 python -m venv .env
 source .env/bin/activate
 ```
@@ -67,9 +68,9 @@ To run the project:
 To lint the project:
 
 ```bash
-python -m black
-python -m flake8
-python -m isort
+python -m black .
+python -m flake8 .
+python -m isort .
 ```
 
 ## Testing

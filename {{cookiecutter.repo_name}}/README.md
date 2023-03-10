@@ -2,7 +2,7 @@
 
 {{cookiecutter.description}}
 
-![python](https://img.shields.io/badge/python-3.11.0-blue.svg)
+![python](https://img.shields.io/badge/python-{{cookiecutter.python_version}}-blue.svg)
 
 ## Developement
 

@@ -1,8 +1,9 @@
 {
-    "repo_name": "repository-name",
+    "repo_name": "repo-name",
     "service_name": "service_name",
     "description": "TBD",
     "version": "0.1",
+    "python_version": "3.11",
     "license": "Arabesque S-Ray GmbH",
     "author_name": "Data Technology",
     "author_email": "data_technology@esgbook.com"

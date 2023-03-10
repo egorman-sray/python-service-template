@@ -1,4 +1,4 @@
-FROM python:3.11-buster
+FROM python:{{cookiecutter.python_version}}-buster
 
 COPY . /app
 WORKDIR /app
