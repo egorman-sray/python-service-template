@@ -15,7 +15,7 @@ Run cookiecutter with this template:
 cookiecutter gh:egorman-sray/python-service-template
 ```
 
-Follow the prompts until the repo is created, see `cookiecutter.json` for the full list of arguments.
+Follow the prompts until the repo is created, see [cookiecutter.json](./cookiecutter.json) for the full list of arguments.
 
 ## Initialise
 
