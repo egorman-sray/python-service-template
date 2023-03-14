@@ -13,9 +13,7 @@ jobs:
           python-version: {{cookiecutter.python_version}}
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
-          python -m pip install setup.py
+          python -m pip install -r requirements.txt --no-cache-dir
       - name: Lint with black/flake8/isort
         run: |
           python -m black . --check --verbose --diff --color

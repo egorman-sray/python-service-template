@@ -13,9 +13,7 @@ jobs:
           python-version: {{cookiecutter.python_version}}
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
-          python -m pip install setup.py
+          python -m pip install -r requirements.txt --no-cache-dir
       - name: Test with pytest
         run: |
           python -m pytest -v tests/

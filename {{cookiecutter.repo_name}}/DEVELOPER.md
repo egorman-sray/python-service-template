@@ -9,7 +9,6 @@
     * [Hooks](#hooks)
 * [Linting](#linting)
 * [Testing](#testing)
-* [Builds](#builds)
 
 ---
 
@@ -36,7 +35,7 @@ cd {{cookiecutter.repo_name}}
 Create and activate a virtual environment:
 
 ```bash
-# Make sure you are using Python {{cookiecutter.python_version}}!
+# Note: Make sure you are using Python {{cookiecutter.python_version}}!
 python -m venv .env
 source .env/bin/activate
 ```
@@ -45,7 +44,6 @@ Install the requirements:
 
 ```bash
 python -m pip install -r requirements.txt
-python -m pip install setup.py
 ```
 
 ### Hooks
@@ -53,6 +51,7 @@ python -m pip install setup.py
 Install the hooks:
 
 ```bash
+# Note: You must be in a git repository for pre-commit to work
 pre-commit install
 ```
 
@@ -77,18 +76,3 @@ To generate test coverage (optional):
 coverage run -m pytest -v tests
 coverage report --omit="tests/*"
 ```
-
-## Builds
-
-To create a build for this repository you must [connect cloud build to your repository](https://cloud.google.com/build/docs/automate-builds#connect_to_your_repository) and then [create a trigger](https://cloud.google.com/build/docs/automate-builds#create_a_trigger) to let GCP know when to trigger a new build. You can [view the build](https://cloud.google.com/build/docs/automate-builds#view_build_details) as it's being created and monitor its progress.
-
-To run a trigger manually:
-
-```bash
-# Note: This requires installing the gcloud beta component "builds"
-gcloud beta builds triggers run {{cookiecutter.repo_name}} --branch=<BRANCH-NAME>
-```
-
-## Workflows
-
-Our workflows are managed by the [data-technology-infrastructure repository](https://github.com/arabesque-sray/data-technology-infrastructure), see their explanation for how workflows are executed.
