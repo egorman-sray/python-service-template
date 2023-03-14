@@ -4,4 +4,4 @@ COPY . /app
 WORKDIR /app
 
 RUN python -m pip install -r requirements.txt  --no-cache-dir
-RUN python -m pip install {{cookiecutter.service_name}}/.
+RUN python -m pip install setup.py

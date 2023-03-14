@@ -9,15 +9,4 @@ setup(
     maintainer_email="{{cookiecutter.author_email}}",
     license="{{cookiecutter.license}}",
     packages=find_packages(),
-    extras_require={
-        "test": [
-            "pre-commit",
-            "pre-commit-hooks",
-            "black",
-            "flake8",
-            "isort",
-            "pytest",
-            "coverage",
-        ]
-    },
 )

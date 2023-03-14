@@ -45,7 +45,7 @@ Install the requirements:
 
 ```bash
 python -m pip install -r requirements.txt
-python -m pip install {{cookiecutter.service_name}}/.[test]
+python -m pip install setup.py
 ```
 
 ### Hooks
@@ -61,9 +61,7 @@ pre-commit install
 To lint the project:
 
 ```bash
-python -m black .
-python -m flake8 .
-python -m isort .
+pre-commit run
 ```
 
 ## Testing
@@ -72,6 +70,10 @@ To test the project:
 
 ```bash
 python -m pytest -v tests
+```
+
+To generate test coverage (optional):
+```bash
 coverage run -m pytest -v tests
 coverage report --omit="tests/*"
 ```
